@@ -75,16 +75,16 @@ Synthetic activation events with reporting date, dealer, package, generalized ac
 
 ## KPI definitions
 
-For each reporting grain—sales channel, director, manager, dealer, viewing segment, package, and sport category—the mart calculates:
+For each reporting grain, sales channel, director, manager, dealer, viewing segment, package, and sport category, the mart calculates:
 
-- **Current Day Activations** — activation units on the deterministic report date
-- **Month-to-Date Activations** — units from the first day of the month through the report date
-- **Year-to-Date Activations** — units from January 1 through the report date
-- **Same Day Prior Week** — units seven days before the report date
-- **Comparable Prior-Month MTD** — prior-month activity through the same day-of-month
-- **Comparable Prior-Year YTD** — prior-year activity through the comparable date
+- **Current Day Activations:** activation units on the deterministic report date
+- **Month-to-Date Activations:** units from the first day of the month through the report date
+- **Year-to-Date Activations:** units from January 1 through the report date
+- **Same Day Prior Week:** units seven days before the report date
+- **Comparable Prior-Month MTD:** prior-month activity through the same day-of-month
+- **Comparable Prior-Year YTD:** prior-year activity through the comparable date
 - **Current Day / MTD / YTD Revenue**
-- **WoW / MoM / YoY Change** — percentage changes with guarded division; a zero prior-period denominator returns `NULL` rather than an infinite or misleading value
+- **WoW / MoM / YoY Change:** percentage changes with guarded division; a zero prior-period denominator returns `NULL` rather than an infinite or misleading value
 
 The demo uses a fixed synthetic report date so results remain deterministic and reproducible.
 
@@ -136,6 +136,6 @@ Tests build an in-memory DuckDB database, load the synthetic fixtures, execute t
 
 This project demonstrates the business-to-analytics pattern behind commercial media and sports performance reporting: define the decision questions, establish governed dimensions and segmentation, encode comparable KPI periods, validate the data, and provide leadership-ready performance output.
 
-For the broader business and leadership context behind my work, see my [Notion portfolio](https://app.notion.com/p/Chris-Vega-3ad07c414a9980588154d596b27ac369).
+For the broader business and leadership context behind my work, see my [Notion portfolio](https://honey-safflower-f72.notion.site/Chris-Vega-3ad07c414a9980588154d596b27ac369).
 
 See [PRIVACY.md](PRIVACY.md) for publication boundaries.
